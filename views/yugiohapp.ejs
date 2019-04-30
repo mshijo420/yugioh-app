@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/yugioh.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+        <title>YU-GI-OH!</title>
+    </head>
+    <body>
+        <header>
+            <div class="msHeader">
+                <a href="duelHistory">
+                    <img id="yugiohLogo" alt="Ficheiro:Yu-Gi-Oh! (Logo).jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg/800px-Yu-Gi-Oh%21_%28Logo%29.jpg" decoding="async" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg/1200px-Yu-Gi-Oh%21_%28Logo%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg 2x" data-file-width="1452" data-file-height="512" width="400" height="150">
+                </a>
+            </div>
+        </header>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="block lifepoints" style="float:left;">
+                    <span class="duelistsName dOneN"></span>
+                    <div class="lp dOneLp"></div>
+                    <div class="btn increaseOne">+</div>
+                    <div class="btn damageOne">-</div>
+                </div>
+                <div class="block lifepoints" style="float:right;">
+                    <span class="duelistsName dTwoN"></span>
+                    <div class="lp dTwoLp"></div>
+                    <div class="btn increaseTwo">+</div>
+                    <div class="btn damageTwo">-</div>
+                </div>
+
+                <br>
+                
+                <div class="block indexZone">
+                    <div>CLOCK</div>
+                    <input type="text" class="index" value="500">
+                    <input id="submit" type="button" value="SUBMIT">
+                </div>
+            </div>
+        </div>
+        
+        <div class="msBox">
+
+            <span class="msLabel">
+                first duelist
+                <select class="selectDuelist dOne">
+                    <option value="null">first duelist</option>
+                    <option value="Marcelo">Marcelo</option>
+                    <option value="Guilherme">Guilherme</option>
+                    <option value="Larissa">Larissa</option>
+                    <option value="Lucas">Lucas</option>
+                </select>
+            </span>
+
+            <span class="msLabel">
+                second duelist
+                <select class="selectDuelist dTwo">
+                    <option value="null">first duelist</option>
+                    <option value="Marcelo">Marcelo</option>
+                    <option value="Guilherme">Guilherme</option>
+                    <option value="Larissa">Larissa</option>
+                    <option value="Lucas">Lucas</option>
+                </select>
+            </span>
+
+            <br>
+
+            <div  class="boTop">it's time to Duel!</button>
+
+        </div>
+
+        <script
+			  src="https://code.jquery.com/jquery-3.4.0.min.js"
+			  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+              crossorigin="anonymous"></script>
+        <script src="/yugiohapp.js"></script>
+    </body>
+</html>

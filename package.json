@@ -1,0 +1,18 @@
+{
+  "name": "yugiohapp",
+  "version": "1.0.0",
+  "description": "an app to control your yugioh duels and update a duelists rank. by mshijo420",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mshijo420",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.4"
+  }
+}

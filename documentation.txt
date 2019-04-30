@@ -1,0 +1,11 @@
+                                YU-GI-OH!
+                                 --APP--
+                                mshijo420
+
+Yugiohapp is an Node.js/Express webaplication, with a mongodb database, to manage
+yugioh's duels and update an duels history.
+
+In the frontend we've an ejs engine working with HTML, CSS and javascript/jQuery.
+
+Basically yugiohapp is entire written in javascript.
+

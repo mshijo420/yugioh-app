@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/yugioh.css">
+        <link rel="stylesheet" href="/duelHistory.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="msHeader">
+                <a href="yugiohapp">
+                    <img alt="Ficheiro:Yu-Gi-Oh! (Logo).jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg/800px-Yu-Gi-Oh%21_%28Logo%29.jpg" decoding="async" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg/1200px-Yu-Gi-Oh%21_%28Logo%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg 2x" data-file-width="1452" data-file-height="512" width="400" height="150" style="display: block; margin: 0 auto;">
+                </a>
+            </div>
+        </header>
+
+        <div class="msBox">
+            <ul>
+                <% for(i=0; i<duels.length; i++) { %>
+                <li>
+                    <h3>Date: <%= duels[i].duelDate %></h3>
+                    <h3>Winner: <%= duels[i].duelWinner %></h3>
+                    <span><%= duels[i].duelistOne %> :</span> <span><%= duels[i].lifePoinstDO %></span>
+                    || 
+                    <span><%= duels[i].duelistTwo %> :</span> <span><%= duels[i].lifePointsDT %></span>
+                    <% } %>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

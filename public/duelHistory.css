@@ -1,0 +1,9 @@
+ul li {
+    list-style: none;
+    display: inline-block;
+    background-color: #ad0000;
+    color: white;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 8px;
+}
